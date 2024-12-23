@@ -1,6 +1,6 @@
 ## Описание проекта
 
-Brigade Hub  — это Backend-часть.
+Brigade Hub — это Backend-часть программы для учета сотрудников строительной компании. 
 
 Он разработан с использованием Django и Django REST Framework. 
 
