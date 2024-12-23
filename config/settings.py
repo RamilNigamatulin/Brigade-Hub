@@ -68,11 +68,11 @@ if "test" in sys.argv:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "NAME": "test_BH",
-            "USER": "postgres",
-            "PASSWORD": "12051993",
-            "HOST": "localhost",
-            "PORT": "5432",
+            "NAME": os.getenv("TEST_NAME"),
+            "USER": os.getenv("TEST_USER"),
+            "PASSWORD": os.getenv("TEST_PASSWORD"),
+            "HOST": os.getenv("TEST_HOST"),
+            "PORT": os.getenv("TEST_PORT"),
         }
     }
 else:
